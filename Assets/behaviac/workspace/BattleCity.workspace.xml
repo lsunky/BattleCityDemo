@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="BattleCity" folder="behaviors" export="..\..\Resources\behaviac\exported" language="cs" version="3">
+  <export>
+    <bson>
+      <isexported>True</isexported>
+    </bson>
+    <cpp>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+    </cpp>
+    <cs>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../../../Scripts</folder>
+    </cs>
+  </export>
+</workspace>

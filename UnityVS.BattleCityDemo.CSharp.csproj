@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A1606EE-82C2-A061-25CF-A0761FC48AEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>Assets\smcs.rsp</CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>4.6.9f1</UnityVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_6_9;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;BEHAVIAC_RELEASE_</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_6_9;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;BEHAVIAC_RELEASE_</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\AStarPathFinding.cs" />
+    <Compile Include="Assets\Scripts\AccelerateAward.cs" />
+    <Compile Include="Assets\Scripts\ArmorAward.cs" />
+    <Compile Include="Assets\Scripts\Award.cs" />
+    <Compile Include="Assets\Scripts\BehaviacFileManager.cs" />
+    <Compile Include="Assets\Scripts\BehaviacSystem.cs" />
+    <Compile Include="Assets\Scripts\Brick.cs" />
+    <Compile Include="Assets\Scripts\BubbleHud.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Camera\BlendText.cs" />
+    <Compile Include="Assets\Scripts\Camera\DemoKeyCommands.cs" />
+    <Compile Include="Assets\Scripts\Camera\FlyingCamera.cs" />
+    <Compile Include="Assets\Scripts\Camera\HelpText.cs" />
+    <Compile Include="Assets\Scripts\Camera\OrbitCamera.cs" />
+    <Compile Include="Assets\Scripts\Camera\ShootBall.cs" />
+    <Compile Include="Assets\Scripts\CreditSystem.cs" />
+    <Compile Include="Assets\Scripts\DangerEstimator.cs" />
+    <Compile Include="Assets\Scripts\GameActor.cs" />
+    <Compile Include="Assets\Scripts\GameLevelCommon.cs" />
+    <Compile Include="Assets\Scripts\HeadQuater.cs" />
+    <Compile Include="Assets\Scripts\InputManager.cs" />
+    <Compile Include="Assets\Scripts\LifeAward.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PowerAward.cs" />
+    <Compile Include="Assets\Scripts\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\SoundEffectPlayer.cs" />
+    <Compile Include="Assets\Scripts\SubBrick.cs" />
+    <Compile Include="Assets\Scripts\TankUtilities.cs" />
+    <Compile Include="Assets\Scripts\TurretController.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Scripts\UIScoreNumber.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Agent\Agent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Agent\Context.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\Attributs.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\CRC32.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\FileManager.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\LogManager.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\Member.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\Meta.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\MiniXml.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\Operation.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\Properties.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\RandomGenerator.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\Utils.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\socketconnect.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Base\socketconnect_base.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Attachments\AttachAction.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Attachments\Effector.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Attachments\Event.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Attachments\Precondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\BehaviorTree.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\BehaviorTree_task.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Action.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Assignment.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Compute.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\End.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Noop.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Wait.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Waitforsignal.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Actions\Waitframes.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Compositestochastic.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Ifelse.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Parallel.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Referencebehavior.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Selector.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Selectorloop.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Selectorprobability.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Selectorstochastic.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Sequence.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Sequencestochastic.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Composites\Withprecondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Conditions\And.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Conditions\Condition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Conditions\Conditionbase.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Conditions\False.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Conditions\Or.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Conditions\True.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\DecoratorIterator.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratoralwaysfailure.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratoralwaysrunning.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratoralwayssuccess.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorcount.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorcountlimit.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorfailureuntil.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorframes.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorlog.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorloop.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorloopuntil.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratornot.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorrepeat.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorsuccessuntil.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratortime.cs" />
+    <Compile Include="Assets\Scripts\behaviac\BehaviorTree\Nodes\Decorators\Decoratorweight.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\AlwaysTransition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\FSM.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\StartCondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\State.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\TransitionCondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\WaitState.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\WaitTransition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\FSM\WaitframesState.cs" />
+    <Compile Include="Assets\Scripts\behaviac\HTN\AgentState.cs" />
+    <Compile Include="Assets\Scripts\behaviac\HTN\Method.cs" />
+    <Compile Include="Assets\Scripts\behaviac\HTN\Planner.cs" />
+    <Compile Include="Assets\Scripts\behaviac\HTN\PlannerTask.cs" />
+    <Compile Include="Assets\Scripts\behaviac\HTN\Task.cs" />
+    <Compile Include="Assets\Scripts\behaviac\Workspace.cs" />
+    <Compile Include="Assets\Scripts\behaviac_generated\behaviors\generated_behaviors.cs" />
+    <Compile Include="Assets\Scripts\behaviac_generated\types\AgentProperties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\Shaders\BubbleDamage.shader" />
+    <None Include="Assets\Resources\Shaders\Fx\Additive.shader" />
+    <None Include="Assets\Resources\Shaders\Fx\ParticleAdditive.shader" />
+    <None Include="Assets\Resources\Shaders\Fx\ParticleBlend.shader" />
+    <None Include="Assets\Resources\Shaders\IlluminateAnimation.shader" />
+    <None Include="Assets\Resources\Shaders\PlayerDiffuse.shader" />
+    <None Include="Assets\Resources\Shaders\SheildShader.shader" />
+    <None Include="Assets\Resources\Shaders\TextureAnimation.shader" />
+    <None Include="Assets\Resources\behaviac\exported\Level_DeathMatch_0.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Level_DeathMatch_1.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Level_Survival.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Agressive.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Chase.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Destroy_Enemy.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_FSM_MoveFire.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Fire.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Fire_Detect.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Fire_Only.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Fire_Random.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_SafeWander.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_SafeWander_RandomFire.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Take_Award_Destroy_Enemy.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_TendencyWander.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_TendencyWander_RandomFire.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_WalkUtilCollision.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_WalkUtilCollision_2Agents.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Wander.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Tank_Wander_RandomFire.xml" />
+    <None Include="Assets\Resources\behaviac\exported\meta\BattleCity.meta.xml" />
+    <None Include="Assets\Scripts\behaviac\license.txt" />
+    <None Include="Assets\Scripts\behaviac\readme.txt" />
+    <None Include="Assets\Scripts\behaviac\version.txt" />
+    <None Include="Assets\behaviac\workspace\BattleCity.workspace.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_安全的随机移动.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_寻找最近奖励.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_摧毁砖块.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_攻击最近的敌人.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_检测并攻击敌人.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_随机开火.xml" />
+    <None Include="Assets\behaviac\workspace\Prefabs\Prefab_随机移动.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Level_DeathMatch_0.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Level_DeathMatch_1.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Level_Survival.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Agressive.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Chase.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Destroy_Enemy.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_FSM_MoveFire.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Fire.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Fire_Detect.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Fire_Only.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Fire_Random.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_SafeWander.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_SafeWander_RandomFire.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Take_Award_Destroy_Enemy.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_TendencyWander.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_TendencyWander_RandomFire.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_WalkUtilCollision.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_WalkUtilCollision_2Agents.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Wander.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\Tank_Wander_RandomFire.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\behaviac.bb.xml" />
+    <None Include="Assets\behaviac\workspace\behaviors\behaviac_meta\BattleCity.meta.xml" />
+    <None Include="Assets\behaviac\workspace\xmlmeta\BattleCityMeta.xml" />
+    <None Include="Assets\link.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>

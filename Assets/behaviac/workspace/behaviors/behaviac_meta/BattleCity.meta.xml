@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types>
+    <enumtype Type="behaviac::EBTStatus" Namespace="behaviac" IsImplemented="true" DisplayName="EBTStatus" Desc="">
+      <enum NativeValue="behaviac::BT_INVALID" Value="BT_INVALID" DisplayName="BT_INVALID" Desc="BT_INVALID" MemberValue="-1" />
+      <enum NativeValue="behaviac::BT_SUCCESS" Value="BT_SUCCESS" DisplayName="BT_SUCCESS" Desc="BT_SUCCESS" MemberValue="-1" />
+      <enum NativeValue="behaviac::BT_FAILURE" Value="BT_FAILURE" DisplayName="BT_FAILURE" Desc="BT_FAILURE" MemberValue="-1" />
+      <enum NativeValue="behaviac::BT_RUNNING" Value="BT_RUNNING" DisplayName="BT_RUNNING" Desc="BT_RUNNING" MemberValue="-1" />
+    </enumtype>
+    <enumtype Type="eGameForce" Namespace="" IsImplemented="true" DisplayName="eGameForce" Desc="eGameForce">
+      <enum NativeValue="RED_FORCE" Value="RED_FORCE" DisplayName="RED_FORCE" Desc="RED_FORCE" MemberValue="-1" />
+      <enum NativeValue="BLUE_FORCE" Value="BLUE_FORCE" DisplayName="BLUE_FORCE" Desc="BLUE_FORCE" MemberValue="-1" />
+      <enum NativeValue="UNKNOWN_FORCE" Value="UNKNOWN_FORCE" DisplayName="UNKNOWN_FORCE" Desc="UNKNOWN_FORCE" MemberValue="-1" />
+    </enumtype>
+    <enumtype Type="eMapDirection" Namespace="" IsImplemented="true" DisplayName="eMapDirection" Desc="eMapDirection">
+      <enum NativeValue="TOP" Value="TOP" DisplayName="TOP" Desc="TOP" MemberValue="-1" />
+      <enum NativeValue="RIGHT" Value="RIGHT" DisplayName="RIGHT" Desc="RIGHT" MemberValue="-1" />
+      <enum NativeValue="BOTTOM" Value="BOTTOM" DisplayName="BOTTOM" Desc="BOTTOM" MemberValue="-1" />
+      <enum NativeValue="LEFT" Value="LEFT" DisplayName="LEFT" Desc="LEFT" MemberValue="-1" />
+      <enum NativeValue="TOTAL" Value="TOTAL" DisplayName="TOTAL" Desc="TOTAL" MemberValue="-1" />
+      <enum NativeValue="UNKNOWN" Value="UNKNOWN" DisplayName="UNKNOWN" Desc="UNKNOWN" MemberValue="-1" />
+    </enumtype>
+    <enumtype Type="eBrickType" Namespace="" IsImplemented="true" DisplayName="eBrickType" Desc="eBrickType">
+      <enum NativeValue="EMPTY" Value="EMPTY" DisplayName="EMPTY" Desc="EMPTY" MemberValue="-1" />
+      <enum NativeValue="TREE" Value="TREE" DisplayName="TREE" Desc="TREE" MemberValue="-1" />
+      <enum NativeValue="AWARD" Value="AWARD" DisplayName="AWARD" Desc="AWARD" MemberValue="-1" />
+      <enum NativeValue="ICE" Value="ICE" DisplayName="ICE" Desc="ICE" MemberValue="-1" />
+      <enum NativeValue="SOIL" Value="SOIL" DisplayName="SOIL" Desc="SOIL" MemberValue="-1" />
+      <enum NativeValue="ACTOR" Value="ACTOR" DisplayName="ACTOR" Desc="ACTOR" MemberValue="-1" />
+      <enum NativeValue="HEADQUATER" Value="HEADQUATER" DisplayName="HEADQUATER" Desc="HEADQUATER" MemberValue="-1" />
+      <enum NativeValue="STEEL" Value="STEEL" DisplayName="STEEL" Desc="STEEL" MemberValue="-1" />
+      <enum NativeValue="OCEAN" Value="OCEAN" DisplayName="OCEAN" Desc="OCEAN" MemberValue="-1" />
+      <enum NativeValue="OBSTACLE" Value="OBSTACLE" DisplayName="OBSTACLE" Desc="OBSTACLE" MemberValue="-1" />
+      <enum NativeValue="PATHRESULT" Value="PATHRESULT" DisplayName="PATHRESULT" Desc="PATHRESULT" MemberValue="-1" />
+      <enum NativeValue="TOTAL" Value="TOTAL" DisplayName="TOTAL" Desc="TOTAL" MemberValue="-1" />
+    </enumtype>
+    <struct Type="System::Object" Namespace="System" Base="" IsRefType="true" IsImplemented="true" DisplayName="Object" Desc="Object" />
+    <struct Type="UnityEngine::Vector3" Namespace="UnityEngine" Base="" IsImplemented="true" DisplayName="Vector3" Desc="Vector3">
+      <Member Name="kEpsilon" DisplayName="kEpsilon" Desc="kEpsilon" Type="float" TypeFullName="System.Single" Class="UnityEngine::Vector3" Public="true" Readonly="true" />
+      <Member Name="x" DisplayName="x" Desc="x" Type="float" TypeFullName="System.Single" Class="UnityEngine::Vector3" Public="true" />
+      <Member Name="y" DisplayName="y" Desc="y" Type="float" TypeFullName="System.Single" Class="UnityEngine::Vector3" Public="true" />
+      <Member Name="z" DisplayName="z" Desc="z" Type="float" TypeFullName="System.Single" Class="UnityEngine::Vector3" Public="true" />
+    </struct>
+    <struct Type="UnityEngine::Color" Namespace="UnityEngine" Base="" IsImplemented="true" DisplayName="Color" Desc="Color">
+      <Member Name="r" DisplayName="r" Desc="r" Type="float" TypeFullName="System.Single" Class="UnityEngine::Color" Public="true" />
+      <Member Name="g" DisplayName="g" Desc="g" Type="float" TypeFullName="System.Single" Class="UnityEngine::Color" Public="true" />
+      <Member Name="b" DisplayName="b" Desc="b" Type="float" TypeFullName="System.Single" Class="UnityEngine::Color" Public="true" />
+      <Member Name="a" DisplayName="a" Desc="a" Type="float" TypeFullName="System.Single" Class="UnityEngine::Color" Public="true" />
+    </struct>
+    <struct Type="UnityEngine::Transform" Namespace="UnityEngine" Base="" IsRefType="true" IsImplemented="true" DisplayName="Transform" Desc="Transform" />
+  </types>
+  <agents>
+    <agent classfullname="behaviac::Agent" DisplayName="behaviac.Agent" Desc="behaviac.Agent" IsRefType="true" IsImplemented="true">
+      <Method Name="VectorLength" DisplayName="VectorLength" Desc="VectorLength" Class="behaviac::Agent" ReturnType="int" ReturnTypeFullName="System.Int32" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="const IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+      </Method>
+      <Method Name="VectorAdd" DisplayName="VectorAdd" Desc="VectorAdd" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+        <Param Name="param1" Type="const System::Object&amp;" TypeFullName="System.Object" DisplayName="param1" Desc="param1" />
+      </Method>
+      <Method Name="VectorRemove" DisplayName="VectorRemove" Desc="VectorRemove" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+        <Param Name="param1" Type="const System::Object&amp;" TypeFullName="System.Object" DisplayName="param1" Desc="param1" />
+      </Method>
+      <Method Name="VectorContains" DisplayName="VectorContains" Desc="VectorContains" Class="behaviac::Agent" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+        <Param Name="param1" Type="const System::Object&amp;" TypeFullName="System.Object" DisplayName="param1" Desc="param1" />
+      </Method>
+      <Method Name="VectorClear" DisplayName="VectorClear" Desc="VectorClear" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="IList&amp;" TypeFullName="System.Collections.IList" DisplayName="param0" Desc="param0" />
+      </Method>
+      <Method Name="LogMessage" DisplayName="LogMessage" Desc="LogMessage" Class="behaviac::Agent" ReturnType="void" ReturnTypeFullName="System.Void" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="const char*" TypeFullName="System.String" DisplayName="param0" Desc="param0" />
+      </Method>
+    </agent>
+    <agent classfullname="GameActor" base="behaviac::Agent" DisplayName="GameActor" Desc="GameActor -&gt; Agent" IsRefType="true" IsImplemented="true">
+      <Member Name="currentOrientation" DisplayName="currentOrientation" Desc="currentOrientation" Class="GameActor" Type="float" TypeFullName="System.Single" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="force" DisplayName="force" Desc="force" Class="GameActor" Type="eGameForce" TypeFullName="XMLPluginBehaviac.eGameForce" defaultvalue="RED_FORCE" Static="false" Public="true" Readonly="false" />
+      <Member Name="gameScore" DisplayName="gameScore" Desc="gameScore" Class="GameActor" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Method Name="moveForward" DisplayName="moveForward" Desc="moveForward" Class="GameActor" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="getBestMoveDirection" DisplayName="getBestMoveDirection" Desc="getBestMoveDirection" Class="GameActor" ReturnType="eMapDirection" ReturnTypeFullName="XMLPluginBehaviac.eMapDirection" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eMapDirection" TypeFullName="XMLPluginBehaviac.eMapDirection" DisplayName="tendencyDirection" Desc="tendencyDirection" />
+      </Method>
+      <Method Name="moveToDirection" DisplayName="moveToDirection" Desc="moveToDirection" Class="GameActor" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eMapDirection" TypeFullName="XMLPluginBehaviac.eMapDirection" DisplayName="direction" Desc="direction" />
+      </Method>
+      <Method Name="rotateToAngle" DisplayName="rotateToAngle" Desc="rotateToAngle" Class="GameActor" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="float" TypeFullName="System.Single" DisplayName="angle" Desc="angle" />
+      </Method>
+      <Method Name="navigate" DisplayName="navigate" Desc="navigate" Class="GameActor" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="findPath" DisplayName="findPath" Desc="findPath" Class="GameActor" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" DisplayName="dest" Desc="dest" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="walkLevel" Desc="walkLevel" />
+      </Method>
+      <Method Name="getPathDistance" DisplayName="getPathDistance" Desc="getPathDistance" Class="GameActor" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false" />
+    </agent>
+    <agent classfullname="GameLevelCommon" base="behaviac::Agent" DisplayName="GameLevelCommon" Desc="GameLevelCommon -&gt; Agent" IsRefType="true" IsImplemented="true">
+      <Member Name="defaultWalkLevel" DisplayName="defaultWalkLevel" Desc="defaultWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="actorWalkLevel" DisplayName="actorWalkLevel" Desc="actorWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="bulletWalkLevel" DisplayName="bulletWalkLevel" Desc="bulletWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="allWalkLevel" DisplayName="allWalkLevel" Desc="allWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="soilWalkLevel" DisplayName="soilWalkLevel" Desc="soilWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="soilSteelWalkLevel" DisplayName="soilSteelWalkLevel" Desc="soilSteelWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="soilSteelOceanWalkLevel" DisplayName="soilSteelOceanWalkLevel" Desc="soilSteelOceanWalkLevel" Class="GameLevelCommon" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+      <Member Name="isPlayerAlive" DisplayName="isPlayerAlive" Desc="isPlayerAlive" Class="GameLevelCommon" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Method Name="setActorLifeCount" DisplayName="setActorLifeCount" Desc="setActorLifeCount" Class="GameLevelCommon" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="life" Desc="life" />
+      </Method>
+      <Method Name="setMainCharID" DisplayName="setMainCharID" Desc="setMainCharID" Class="GameLevelCommon" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="getActorLifeCount" DisplayName="getActorLifeCount" Desc="getActorLifeCount" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="isAllEnemyDeadForever" DisplayName="isAllEnemyDeadForever" Desc="isAllEnemyDeadForever" Class="GameLevelCommon" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="isPlayerDeadForever" DisplayName="isPlayerDeadForever" Desc="isPlayerDeadForever" Class="GameLevelCommon" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="getBrickType" DisplayName="getBrickType" Desc="getBrickType" Class="GameLevelCommon" ReturnType="eBrickType" ReturnTypeFullName="XMLPluginBehaviac.eBrickType" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="GameActor*" TypeFullName="XMLPluginBehaviac.GameActor" DisplayName="p_" Desc="p_" />
+        <Param Name="param1" Type="eMapDirection" TypeFullName="XMLPluginBehaviac.eMapDirection" DisplayName="dir_" Desc="dir_" />
+        <Param Name="param2" Type="int" TypeFullName="System.Int32" DisplayName="step" Desc="step" />
+      </Method>
+      <Method Name="getAvailabeMoveDirection" DisplayName="getAvailabeMoveDirection" Desc="getAvailabeMoveDirection" Class="GameLevelCommon" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="GameActor*" TypeFullName="XMLPluginBehaviac.GameActor" DisplayName="p_" Desc="p_" />
+        <Param Name="param1" Type="eMapDirection" TypeFullName="XMLPluginBehaviac.eMapDirection" DisplayName="defaultDirection" Desc="defaultDirection" />
+      </Method>
+      <Method Name="isPointWakable" DisplayName="isPointWakable" Desc="isPointWakable" Class="GameLevelCommon" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="x" Desc="x" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="y" Desc="y" />
+        <Param Name="param2" Type="int" TypeFullName="System.Int32" DisplayName="walkLevel" Desc="walkLevel" />
+      </Method>
+      <Method Name="isBrickTypeWakable" DisplayName="isBrickTypeWakable" Desc="isBrickTypeWakable" Class="GameLevelCommon" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eBrickType" TypeFullName="XMLPluginBehaviac.eBrickType" DisplayName="t" Desc="t" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="walkLevel" Desc="walkLevel" />
+      </Method>
+      <Method Name="getPlayer" DisplayName="getPlayer" Desc="getPlayer" Class="GameLevelCommon" ReturnType="behaviac::Agent*" ReturnTypeFullName="XMLPluginBehaviac.behaviac_Agent" Static="false" Public="true" istask="false" />
+      <Method Name="randomNumberInt" DisplayName="randomNumberInt" Desc="randomNumberInt" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="min" Desc="min" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="max" Desc="max" />
+      </Method>
+      <Method Name="randomNumberFloat" DisplayName="randomNumberFloat" Desc="randomNumberFloat" Class="GameLevelCommon" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="float" TypeFullName="System.Single" DisplayName="min" Desc="min" />
+        <Param Name="param1" Type="float" TypeFullName="System.Single" DisplayName="max" Desc="max" />
+      </Method>
+      <Method Name="getEnemyCount" DisplayName="getEnemyCount" Desc="getEnemyCount" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false" />
+      <Method Name="getNearestEnemy" DisplayName="getNearestEnemy" Desc="getNearestEnemy" Class="GameLevelCommon" ReturnType="behaviac::Agent*" ReturnTypeFullName="XMLPluginBehaviac.behaviac_Agent" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eGameForce" TypeFullName="XMLPluginBehaviac.eGameForce" DisplayName="force" Desc="force" />
+      </Method>
+      <Method Name="getNearestAwardID" DisplayName="getNearestAwardID" Desc="getNearestAwardID" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false" />
+      <Method Name="isAwardExist" DisplayName="isAwardExist" Desc="isAwardExist" Class="GameLevelCommon" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="getAwardPosition" DisplayName="getAwardPosition" Desc="getAwardPosition" Class="GameLevelCommon" ReturnType="UnityEngine::Vector3" ReturnTypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="getEnemyPosition" DisplayName="getEnemyPosition" Desc="getEnemyPosition" Class="GameLevelCommon" ReturnType="UnityEngine::Vector3" ReturnTypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="behaviac::Agent*" TypeFullName="XMLPluginBehaviac.behaviac_Agent" DisplayName="agent" Desc="agent" />
+      </Method>
+      <Method Name="continueGame" DisplayName="continueGame" Desc="continueGame" Class="GameLevelCommon" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false" />
+      <Method Name="showCredit" DisplayName="showCredit" Desc="showCredit" Class="GameLevelCommon" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="stopGame" DisplayName="stopGame" Desc="stopGame" Class="GameLevelCommon" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="bool" TypeFullName="System.Boolean" DisplayName="doesWin" Desc="doesWin" />
+      </Method>
+      <Method Name="spawnRandomActor" DisplayName="spawnRandomActor" Desc="spawnRandomActor" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eGameForce" TypeFullName="XMLPluginBehaviac.eGameForce" DisplayName="force" Desc="force" />
+      </Method>
+      <Method Name="spawnGameActor1" DisplayName="spawnGameActor1" Desc="spawnGameActor1" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="string" TypeFullName="System.String" DisplayName="behaviorTree" Desc="behaviorTree" />
+        <Param Name="param1" Type="UnityEngine::Color" TypeFullName="XMLPluginBehaviac.UnityEngine_Color" DisplayName="clr" Desc="clr" />
+        <Param Name="param2" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="spawnGameActor2" DisplayName="spawnGameActor2" Desc="spawnGameActor2" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="string" TypeFullName="System.String" DisplayName="behaviorTree" Desc="behaviorTree" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="spawnIndex" Desc="spawnIndex" />
+        <Param Name="param2" Type="UnityEngine::Color" TypeFullName="XMLPluginBehaviac.UnityEngine_Color" DisplayName="clr" Desc="clr" />
+      </Method>
+      <Method Name="spawnGameActor3" DisplayName="spawnGameActor3" Desc="spawnGameActor3" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="string" TypeFullName="System.String" DisplayName="behaviorTree" Desc="behaviorTree" />
+        <Param Name="param1" Type="UnityEngine::Color" TypeFullName="XMLPluginBehaviac.UnityEngine_Color" DisplayName="clr" Desc="clr" />
+      </Method>
+      <Method Name="spawnGameActor4" DisplayName="spawnGameActor4" Desc="spawnGameActor4" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eGameForce" TypeFullName="XMLPluginBehaviac.eGameForce" DisplayName="force" Desc="force" />
+        <Param Name="param1" Type="string" TypeFullName="System.String" DisplayName="behaviorTree" Desc="behaviorTree" />
+        <Param Name="param2" Type="int" TypeFullName="System.Int32" DisplayName="spawnIndex" Desc="spawnIndex" />
+        <Param Name="param3" Type="UnityEngine::Color" TypeFullName="XMLPluginBehaviac.UnityEngine_Color" DisplayName="clr" Desc="clr" />
+        <Param Name="param4" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="spawnAward" DisplayName="spawnAward" Desc="spawnAward" Class="GameLevelCommon" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="intType" Desc="intType" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="x" Desc="x" />
+        <Param Name="param2" Type="int" TypeFullName="System.Int32" DisplayName="y" Desc="y" />
+        <Param Name="param3" Type="float" TypeFullName="System.Single" DisplayName="lifeTime" Desc="lifeTime" />
+      </Method>
+      <Method Name="spawnEffect" DisplayName="spawnEffect" Desc="spawnEffect" Class="GameLevelCommon" ReturnType="UnityEngine::Transform*" ReturnTypeFullName="XMLPluginBehaviac.UnityEngine_Transform" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="string" TypeFullName="System.String" DisplayName="fileName" Desc="fileName" />
+        <Param Name="param1" Type="UnityEngine::Transform*" TypeFullName="XMLPluginBehaviac.UnityEngine_Transform" DisplayName="parent" Desc="parent" />
+        <Param Name="param2" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" DisplayName="tr" Desc="tr" />
+        <Param Name="param3" Type="float" TypeFullName="System.Single" DisplayName="sc" Desc="sc" />
+      </Method>
+      <Method Name="isActorAlive" DisplayName="isActorAlive" Desc="isActorAlive" Class="GameLevelCommon" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="id" Desc="id" />
+      </Method>
+      <Method Name="getIntArrayElement" DisplayName="getIntArrayElement" Desc="getIntArrayElement" Class="GameLevelCommon" ReturnType="int" ReturnTypeFullName="System.Int32" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="vector&lt;int&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" DisplayName="data" Desc="data" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="index" Desc="index" />
+      </Method>
+      <Method Name="getStringArrayElement" DisplayName="getStringArrayElement" Desc="getStringArrayElement" Class="GameLevelCommon" ReturnType="string" ReturnTypeFullName="System.String" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="vector&lt;string&gt;" TypeFullName="System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" DisplayName="data" Desc="data" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="index" Desc="index" />
+      </Method>
+      <Method Name="getColorArrayElement" DisplayName="getColorArrayElement" Desc="getColorArrayElement" Class="GameLevelCommon" ReturnType="UnityEngine::Color" ReturnTypeFullName="XMLPluginBehaviac.UnityEngine_Color" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="vector&lt;UnityEngine::Color&gt;" TypeFullName="System.Collections.Generic.List`1[[XMLPluginBehaviac.UnityEngine_Color, XMLPluginBehaviac, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" DisplayName="data" Desc="data" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="index" Desc="index" />
+      </Method>
+      <Method Name="getGameForceArrayElement" DisplayName="getGameForceArrayElement" Desc="getGameForceArrayElement" Class="GameLevelCommon" ReturnType="eGameForce" ReturnTypeFullName="XMLPluginBehaviac.eGameForce" Static="true" Public="true" istask="false">
+        <Param Name="param0" Type="vector&lt;eGameForce&gt;" TypeFullName="System.Collections.Generic.List`1[[XMLPluginBehaviac.eGameForce, XMLPluginBehaviac, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]" DisplayName="data" Desc="data" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="index" Desc="index" />
+      </Method>
+    </agent>
+    <agent classfullname="Player" base="GameActor" DisplayName="Player" Desc="Player -&gt; GameActor" IsRefType="true" IsImplemented="true">
+      <Member Name="hp" DisplayName="hp" Desc="hp" Class="Player" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="damageLevel" DisplayName="damageLevel" Desc="damageLevel" Class="Player" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="Index" DisplayName="Index" Desc="Index" Class="Player" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="Status" DisplayName="Status" Desc="Status" Class="Player" Type="behaviac::EBTStatus" TypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" defaultvalue="BT_INVALID" Static="false" Public="true" Readonly="false" />
+      <Method Name="detectNearestEnemyInView" DisplayName="detectNearestEnemyInView" Desc="detectNearestEnemyInView" Class="Player" ReturnType="float" ReturnTypeFullName="System.Single" Static="false" Public="true" istask="false" />
+      <Method Name="findNearestEnemy" DisplayName="findNearestEnemy" Desc="findNearestEnemy" Class="Player" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="canDestroyBrick" DisplayName="canDestroyBrick" Desc="canDestroyBrick" Class="Player" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="int" TypeFullName="System.Int32" DisplayName="step" Desc="step" />
+      </Method>
+      <Method Name="detectEnemy" DisplayName="detectEnemy" Desc="detectEnemy" Class="Player" ReturnType="int" ReturnTypeFullName="System.Int32" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="eMapDirection" TypeFullName="XMLPluginBehaviac.eMapDirection" DisplayName="dir" Desc="dir" />
+      </Method>
+      <Method Name="aimToAngle" DisplayName="aimToAngle" Desc="aimToAngle" Class="Player" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="float" TypeFullName="System.Single" DisplayName="angle" Desc="angle" />
+      </Method>
+      <Method Name="aimToTarget" DisplayName="aimToTarget" Desc="aimToTarget" Class="Player" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" DisplayName="position" Desc="position" />
+      </Method>
+      <Method Name="fire" DisplayName="fire" Desc="fire" Class="Player" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="true" istask="false" />
+      <Method Name="predicateFirePoint" DisplayName="predicateFirePoint" Desc="predicateFirePoint" Class="Player" ReturnType="UnityEngine::Vector3" ReturnTypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="behaviac::Agent*" TypeFullName="XMLPluginBehaviac.behaviac_Agent" DisplayName="target" Desc="target" />
+      </Method>
+      <Method Name="locationTendencyToTarget" DisplayName="locationTendencyToTarget" Desc="locationTendencyToTarget" Class="Player" ReturnType="eMapDirection" ReturnTypeFullName="XMLPluginBehaviac.eMapDirection" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" DisplayName="position" Desc="position" />
+      </Method>
+      <Method Name="getTarget" DisplayName="getTarget" Desc="getTarget" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" IsRef="true" DisplayName="target" Desc="target" />
+      </Method>
+      <Method Name="moveto" DisplayName="moveto" Desc="moveto" Class="Player" ReturnType="behaviac::EBTStatus" ReturnTypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" Static="false" Public="false" istask="false">
+        <Param Name="param0" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" DisplayName="targetPos" Desc="targetPos" />
+      </Method>
+      <Method Name="getInfo" DisplayName="getInfo" Desc="getInfo" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="float" TypeFullName="System.Single" IsRef="true" DisplayName="w" Desc="w" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" IsRef="true" DisplayName="index" Desc="index" />
+      </Method>
+      <Method Name="printf" DisplayName="printf" Desc="printf" Class="Player" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="false">
+        <Param Name="param0" Type="float" TypeFullName="System.Single" DisplayName="w" Desc="w" />
+        <Param Name="param1" Type="int" TypeFullName="System.Int32" DisplayName="index" Desc="index" />
+      </Method>
+    </agent>
+  </agents>
+  <instances>
+    <instance name="GameLevel" class="GameLevelCommon" DisplayName="GameLevel" Desc="GameLevel" />
+  </instances>
+</meta>
